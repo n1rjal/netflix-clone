@@ -1,0 +1,65 @@
+.netflix-logo{
+    height:70px;
+    width:160px;
+    line-height: 1.5cm;
+    margin-right:1cm;
+    vertical-align: middle;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin:0 10px;
+    line-height: 1cm;
+    align-items: center;
+}
+
+nav ul,nav ul li{
+    display: inline-block;
+    line-height: 1cm;
+    margin:0px 5px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    line-height: 1cm;
+    text-decoration: none;
+    color:rgb(201, 201, 201);
+}
+
+nav ul li a.active, nav ul li a:hover{
+    color:rgb(255, 255, 255);
+}
+
+nav ul.right form input[type="text"]{
+    height:1cm;
+    padding:10px;
+    outline:hidden;
+    border:0;
+    width:200px;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+nav ul.right form select{
+    height:1cm;
+    outline:hidden;
+    border:0;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+nav ul.right form{
+    background-color: rgba(255, 255, 255, 0.644);
+    display: none;
+}
+
+nav ul.right form.show{
+    display: inline-block;
+}
+
+nav .search-icon{
+    display:none;
+}
+nav .search-icon.show{
+    display: inline-block;
+}

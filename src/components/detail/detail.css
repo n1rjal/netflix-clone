@@ -1,0 +1,84 @@
+.detail-container{
+    display: flex;
+    justify-content: space-between;
+    overflow-x:hidden;
+    margin:1cm;
+}
+
+@media only screen and (max-width:600px){
+    .detail-container{
+        display: flex;
+        justify-content: space-between;
+        overflow-x:hidden;
+        margin:1cm;
+        flex-direction: column;
+    }
+    
+}
+
+.detail-container > div{
+    margin:10px 0;
+}
+
+.left-poster{
+    margin: 1cm 1cm 0 0 !important;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin:0 !important;
+}
+
+.intro h1,.title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.intro a{
+    text-decoration: none;
+    color:#fff;
+    margin:0 10px;
+}
+
+.about-film{
+    font-size: 15px;
+    padding:10px;
+}
+
+.description{
+    margin:10px 0;
+}
+
+.intro{
+    padding-bottom:20px;
+}
+
+.intro small{
+    margin:0.1cm 0;
+}
+
+.intro small:nth-last-child(2n):after{
+    content:'';
+    padding-right:5px;
+    border-right:1px solid rgba(255, 255, 255, 0.753);
+}
+
+.ai-star{
+    font-size:40px;   
+}
+
+.star{
+    display: flex;
+    line-height: 1cm;
+    font-size: 30px;
+}
+.recommendations{
+    margin:1cm;
+}

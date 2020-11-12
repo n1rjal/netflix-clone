@@ -1,0 +1,63 @@
+### Url 
+https://api.themoviedb.org/3/movie/550/recommendations?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&page=1
+### API KEY = bab9fceb21a5537965a06763798905f9
+
+
+### SEARCH
+
+###SEARCH MULTI
+https://api.themoviedb.org/3/search/multi?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&query=Peaky&page=1&include_adult=false
+
+### Search TV
+https://api.themoviedb.org/3/search/tv?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&page=1&query=avengers&include_adult=false
+
+### SEARCH MOVIE
+https://api.themoviedb.org/3/search/movie?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&query=avengers&page=1&include_adult=false
+
+
+### POSTER
+### w500
+### https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg
+
+### DEISCOVER 
+
+### DISCOVER MOVIE
+https://api.themoviedb.org/3/discover/movie?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1
+
+### DISCOVER TV SHOWS
+https://api.themoviedb.org/3/discover/tv?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&sort_by=popularity.desc&page=1&include_null_first_air_dates=false&page=1
+
+##
+https://api.themoviedb.org/3/tv/12345??api_key=bab9fceb21a5537965a06763798905f9&append_to_response=videos
+
+### GET POPULAR MOVIES
+https://api.themoviedb.org/3/movie/popular?api_key=bab9fceb21a5537965a06763798905f9
+
+### GET detail about movies
+https://api.themoviedb.org/3/movie/550?api_key=bab9fceb21a5537965a06763798905f9
+
+### TOP RATED MOVIES
+/movie/top_rated?api_key=bab9fceb21a5537965a06763798905f9
+
+### DETAIL AND VIDEOS
+https://api.themoviedb.org/3/movie/550?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&append_to_response=videos
+
+
+### TV SERIES FROM HERE
+
+### DISCOVER TV SHOWS
+https://api.themoviedb.org/3/discover/tv?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&sort_by=popularity.desc&page=1&include_null_first_air_dates=false&page=1
+
+
+### Popular 
+https://api.themoviedb.org/3/tv/41250/tv/popular?api_key=bab9fceb21a5537965a06763798905f9
+
+### DETAIL AND YOUTUBE TRAILER
+https://api.themoviedb.org/3/tv/71712?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&append_to_response=videos
+
+### ON THE AIR
+
+/tv/top_rated
+
+### GET SEASON INFO
+https://api.themoviedb.org/3/tv/550/season/2?api_key=bab9fceb21a5537965a06763798905f9&append_to_repsonse=videos

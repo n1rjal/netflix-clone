@@ -15,11 +15,17 @@ const Card = (props)=>{
     
     var id = props.obj.id;
     return (
+      <Link to={`/${props.type}/${props.obj.id}`}>
         <div className="card">
-            <Link to={`/${props.type}/${props.obj.id}`}>
-                <img src={imgsrc} width="300" height="169" className="poster" alt="poster" />
-            </Link>
+          <img
+            src={imgsrc}
+            width="300"
+            height="169"
+            className="poster"
+            alt="poster"
+          />
         </div>
+      </Link>
     );
 }
 

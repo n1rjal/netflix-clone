@@ -1,53 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.home {
+    max-width: 95vw;
+    margin: auto;
+    
+}
 
-.movie-horizontal-container{
-    max-width: 100%;
-    padding:1cm 5px;
-    overflow-x: hidden;
-    display: inline-block;
-    white-space: nowrap;
+.home__explore {
+    margin-bottom: 15px;
+}
+
+.home__swiperContainer {
     position: relative;
+    max-width: 100%;
+    
 }
 
-.movie-horizontal-container:hover > .point{
-    display: block;
+.home__mainContent {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    padding: 1cm 0;
 }
 
-.left-point{
-    display: none;
+.home__leftArrow, .home__rightArrow {
     position: absolute;
-    content: "003C";
-    font-size: 30px;
-    color:rgb(213, 213, 213);
-    padding:10px;
-    z-index:4;
-    transform: translateY(-25%);
+    font-size: 35px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    z-index: 100;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.733);
-    top:50%;
-    border-radius: 5px;
-    left:10px;
 }
 
-.right-point{
-    display: none;
-    position: absolute;
-    content: "003C";
-    font-size: 30px;
-    color:white;
-    padding:10px;
-    z-index:4;
-    border-radius: 5px;
-    transform: translateY(-25%);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.733);
-    position: absolute;
-    top:50%;
-    right:10px;
+.home__leftArrow {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
 }
-
-.explore{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin:5px 0;
+.home__rightArrow {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
 }

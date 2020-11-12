@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from "react";
 import {AiFillStar} from "react-icons/ai";
-import Card from "../card/card";
 import "../detail/detail.css";
 import Recom from "../recommendations/recommendation";
+
 const DetailTv = (props)=>{
     const [id,setId] = useState(props.match.params.id);
     const [info,setInfo] = useState({});
@@ -63,8 +63,8 @@ const DetailTv = (props)=>{
                     <div style={{display:"flex",flexWrap:"wrap"}}>
                         {info.videos 
                         ?   info.seasons.map(season=>(
-                            <>
-                                <div>
+                            
+                            <div key={season.poster_path }>
                                     <h2>
                                         Season 1
                                     </h2>
@@ -74,7 +74,7 @@ const DetailTv = (props)=>{
                                             <small>Total Episodes : {season.episode_count}</small>
                                     </div>
                                 </div>
-                            </>
+                            
                             ))
                         :   "No videos Provided"
                     }

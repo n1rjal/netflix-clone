@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../card/card";
 
 const Recom = (props)=>{
-    if (props.recom){
+    if (props.recom) {
         return (
             <div className="similar">
                 <h1 className="title" style={{marginLeft:"1cm"}}>

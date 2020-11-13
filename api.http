@@ -42,6 +42,9 @@ https://api.themoviedb.org/3/movie/550?api_key=bab9fceb21a5537965a06763798905f9
 ### DETAIL AND VIDEOS
 https://api.themoviedb.org/3/movie/550?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&append_to_response=videos
 
+### Get Populr
+https://api.themoviedb.org/3/movie/popular?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&page=1 
+
 
 ### TV SERIES FROM HERE
 

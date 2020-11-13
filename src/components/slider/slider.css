@@ -1,0 +1,70 @@
+.slider{
+    margin:20px 0;
+}
+
+.slider__slider{
+    max-width: 100%;
+    padding:15px 0;
+    overflow-x: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.slider__sliderContainer{
+    display:block;
+    position:relative;
+}
+
+
+.slider__sliderContainer:hover > .slider__leftArrow,
+.slider__sliderContainer:hover > .slider__rightArrow{
+    display: block;
+}
+
+.slider__leftArrow{
+    display: none;
+    position: absolute;
+    content: "003C";
+    font-size: 25px;
+    color:rgb(213, 213, 213);
+    height:50px;
+    width:50px;
+    padding:10px;
+    z-index:4;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    top:50%;
+    border-radius: 100%;
+    line-height: 100%;
+    text-align: center;
+    left:0;
+}
+
+.slider__rightArrow{
+    display: none;
+    position: absolute;
+    content: "003C";
+    font-size: 25px;
+    color:white;
+    height:50px;
+    width:50px;
+    padding:10px;
+    z-index:4;
+    border-radius: 100%;
+    transform: translate(+50%,-50%);
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:50%;
+    line-height: 100%;
+    text-align: center;
+    right:0;
+}
+
+.slider__explore{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}

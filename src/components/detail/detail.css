@@ -5,6 +5,16 @@
     margin:1cm;
 }
 
+.season-container{
+    white-space: nowrap;
+    display: flex;
+    max-width:250px;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
 @media only screen and (max-width:600px){
     .detail-container{
         display: flex;

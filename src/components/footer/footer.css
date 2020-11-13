@@ -1,0 +1,17 @@
+footer{
+    height:100px;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer a:before{
+    margin:0 2px;
+    content:"\00A9";
+}

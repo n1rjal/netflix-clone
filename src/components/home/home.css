@@ -1,53 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 
-.movie-horizontal-container{
-    max-width: 100%;
-    padding:1cm 5px;
-    overflow-x: hidden;
-    display: inline-block;
-    white-space: nowrap;
+.home{
+    max-width: 95%;
+    margin:auto;
+}
+
+.showcase__image{
+    width:100%;
+    height:500px;
     position: relative;
 }
 
-.movie-horizontal-container:hover > .point{
-    display: block;
+.showcase{
+   position: relative;
+   display: block;
 }
 
-.left-point{
-    display: none;
+.showcase__container{
     position: absolute;
-    content: "003C";
-    font-size: 30px;
-    color:rgb(213, 213, 213);
-    padding:10px;
-    z-index:4;
-    transform: translateY(-25%);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.733);
-    top:50%;
-    border-radius: 5px;
-    left:10px;
-}
-
-.right-point{
-    display: none;
-    position: absolute;
-    content: "003C";
-    font-size: 30px;
+    display: flex;
+    max-width: 100%;
+    width:100%;
+    top:0;
+    padding:1cm;
+    align-items: flex-end;
+    left:0;
     color:white;
-    padding:10px;
-    z-index:4;
-    border-radius: 5px;
-    transform: translateY(-25%);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.733);
-    position: absolute;
-    top:50%;
-    right:10px;
+    height:100%;
+    background-image:linear-gradient(transparent,rgba(14, 14, 14, 0.8),rgb(14, 14, 14));
 }
 
-.explore{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin:5px 0;
+.showcase__intro{
+    font-size: 18px;
+    position: relative;
+    word-wrap: break-word;
+    max-width: 50%;
+}
+
+.showcase__title{
+    font-size:35px;
+    color:rgb(253, 34, 34);
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+@media only screen and (max-width:600px){
+
+    .showcase__intro{
+        max-width: 100%;
+        top:60%;
+    }
 }

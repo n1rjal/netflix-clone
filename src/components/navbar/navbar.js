@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import netflixlogo from "../../assets/netflix.png";
 import "./navbar.css";
 import {FaSearch} from "react-icons/fa";
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 const NavBar = ()=>{
 
@@ -21,9 +21,8 @@ const NavBar = ()=>{
                 <ul className="left">
                     <img className="netflix-logo" alt="netflix-logo" src={netflixlogo} />
                     <li><NavLink to="/" className="">Home</NavLink></li>
-                    <li><NavLink to="/tvshow" className="">TV Shows</NavLink></li>
-                    <li><NavLink to="/movies" className="">Movies</NavLink></li>
-                    <li><NavLink to="/explore" className="">Explore</NavLink></li>
+                    <li><Link smooth to="#tvshows" className="">TV Shows</Link></li>
+                    <li><Link smooth to="#movies" className="">Movies</Link></li>
                 </ul>
 
                 <ul className="right">

@@ -1,0 +1,20 @@
+.loadingScreen{
+    max-height:300px;
+    height:fit-content;
+    max-width:fit-content;
+    margin: 5cm auto;
+}
+
+.loadingScreen__loader{
+    border: 6px solid #c1c1c1;
+    border-top: 6px solid #f00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 0.6s linear infinite; 
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

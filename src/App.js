@@ -5,6 +5,7 @@ import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 import Home from "./components/home/home";
 import Detail from "./components/detail/detail";
 import DetailTv from "./components/detailtv/detailtv";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             </div>
           </Switch>
         </Router>
+        <Footer />
       </header>
     </div>
   );

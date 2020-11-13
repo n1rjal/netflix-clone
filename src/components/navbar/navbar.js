@@ -1,18 +1,20 @@
 import React,{useState} from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, Redirect} from "react-router-dom";
 import netflixlogo from "../../assets/netflix.png";
 import "./navbar.css";
 import {FaSearch} from "react-icons/fa";
 import { HashLink as Link } from 'react-router-hash-link';
 
-const NavBar = ()=>{
 
+const NavBar = ()=>{
     const [ searchinput, setSerchInput] = useState("");
-    const [ searchtype, setSearchType] = useState("");
+    const [ searchtype, setSearchType] = useState("multi");
     const [showForm, setShowForm] =useState(false);
 
-    const onSubmission = ()=>{
-
+    const onSubmission = (e)=>{
+        e.preventDefault();
+        window.location = `/search?name=${searchinput}&type=${searchtype}`;
+        
     }
 
     return (
@@ -32,12 +34,12 @@ const NavBar = ()=>{
                     <li>
                         <form className={showForm===false?"search-form":"search form show"} onSubmit={onSubmission}>
                             <input type="text" onChange={e=>{
-                                setSerchInput(e.value);
+                                setSerchInput(e.target.value);
                             }} placeholder="Search" value={searchinput} />
                             <select onChange={(e)=>{
-                                setSearchType(e.value);
+                                setSearchType(e.target.value);
                             }} value={searchtype}>
-                                <option value="all" defaultValue="true">All</option>
+                                <option value="multi" defaultValue>All</option>
                                 <option value="movie">Movie</option>
                                 <option value="tv">TV</option>
                             </select>

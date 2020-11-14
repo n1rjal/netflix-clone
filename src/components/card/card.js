@@ -19,7 +19,7 @@ const Card = (props)=>{
         <>
             <div className="card">
                 <Link to={`/${props.type}/${props.obj.id}`}>
-                    <img src={imgsrc} width="300" height="169" className="poster" alt="poster" />
+                    <img src={imgsrc} className="poster" alt="poster" />
                 </Link>
                 <br />
             </div>

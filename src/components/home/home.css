@@ -53,4 +53,13 @@
         max-width: 100%;
         top:60%;
     }
+
+    .showcase__container{
+        align-items: flex-start;
+    }
+
+    .showcase__intro{
+        max-width: 100%;
+        font-size: 17px;
+    }
 }

@@ -3,15 +3,49 @@ footer{
     color:#fff;
     width: 100%;
     text-align: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-around;
+    max-width: 95%;
+    margin:2cm auto;
+
 }
 
 footer a{
-    color:white;
+    color:rgb(209, 206, 206);
     text-decoration: none;
-    font-size: 30px;
 }
 
-footer a:before{
-    margin:0 2px;
-    content:"\00A9";
+footer a:hover{
+    color:white;
+}
+
+
+footer ul li{
+    text-align: left;
+    list-style:none;
+    margin:10px 0;
+}
+
+@media only screen and (max-width:450px){
+    footer{
+        max-width: 100vw;
+        flex-direction: row;
+        justify-content: flex-start;
+        height:min-content;
+        flex-wrap: wrap;
+        max-width: 95%;
+        margin:2cm auto;
+    
+    }
+
+    footer ul{
+        max-width: 150px;
+        width:150px;
+    }
+
+    footer ul li a{
+        text-align: center;
+    }
+
 }

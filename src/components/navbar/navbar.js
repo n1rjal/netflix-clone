@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {NavLink,Redirect,useHistory} from "react-router-dom";
+import {NavLink,useHistory} from "react-router-dom";
 import netflixlogo from "../../assets/netflix.png";
 import "./navbar.css";
 import {FaSearch} from "react-icons/fa";
@@ -15,7 +15,7 @@ const NavBar = ()=>{
         
     const onSubmission = (e)=>{
         e.preventDefault();
-        history.push(`/search?name=${searchinput}&type=${searchtype}`);
+        history.push( encodeURI(`/search?name=${encodeURI(searchinput)}&type=${encodeURI(searchtype)}`));
     }
 
     const getclass = ()=>{

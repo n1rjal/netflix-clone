@@ -9,16 +9,19 @@ const Search = ()=>{
     const location = useLocation();
     const params = new URLSearchParams(location.search);
     
+
     const name = params.get("name");
     const type = params.get("type");
     const [loading, setLoading] = useState(true);
     const [results, setResults] = useState([]);
-
+    
+    
     useEffect(()=>{
-        fetch( `https://api.themoviedb.org/3/search/${type}?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&query=${name}&page=1&include_adult=true`)
+        fetch(
+                `https://api.themoviedb.org/3/search/${type}?api_key=bab9fceb21a5537965a06763798905f9&language=en-US&query=${name}&page=1&include_adult=true`
+            )
             .then(res=>res.json())
             .then(data=>{
-                console.log("DATA "+data);
                 setResults(data.results);
                 setLoading(false);
             })

@@ -9,9 +9,13 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin:0 10px;
     line-height: 1cm;
     align-items: center;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    background-image : linear-gradient(#000,transparent); 
 }
 
 nav ul,nav ul li{
@@ -62,4 +66,49 @@ nav .search-icon{
 }
 nav .search-icon.show{
     display: inline-block;
+}
+
+.nav__toggler{
+    display:none;
+}
+
+@media only screen and (max-width:705px){
+
+    .nav__toggler{
+        display:inline-block;
+        font-size: 30px;
+        color:white;
+        background-color: crimson;
+        border-radius: 10px;
+    }
+    nav{
+        background-color: #000;
+        padding:10px;
+        flex-direction: row;
+    }
+    nav ul{
+        margin:0;
+        padding:2px;
+        float: left;
+    }
+    nav ul li{
+        display: block;
+    }
+    
+    .navLink{
+        display: none;
+    }
+
+    .navLink.show{
+        display: block;
+    }
+
+    .netflix-logo{
+        margin:0;
+        display: none;
+    }
+
+    nav ul.right form input[type="text"]{
+        width:100px;
+    }
 }

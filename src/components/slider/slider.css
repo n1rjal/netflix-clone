@@ -68,3 +68,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
+
+@media only screen and (max-width:1000px){
+    .slider__slider{
+        overflow-x: scroll;
+    }
+
+    .slider__sliderContainer:hover > .slider__leftArrow,
+    .slider__sliderContainer:hover > .slider__rightArrow{
+        display: none;
+    }
+}

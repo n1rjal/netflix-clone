@@ -2,6 +2,8 @@ import React,{useState,useEffect} from "react";
 import {useLocation} from "react-router-dom"
 import Loader from "../loader/loader";
 import Card from "../card/card";
+import "./search.css";
+
 
 const Search = ()=>{
     const location = useLocation();
@@ -25,14 +27,15 @@ const Search = ()=>{
     
     if (loading) return <Loader />
 
-    console.log(results);
-
     return (
         <>
             <div className="searchResults">
                 {results.map((item)=>
-                    <Card obj = {item} type={item.media_type || type} />
+                item.media_type !== "person"
+                    ? <Card obj = {item} type={item.media_type || type} />
+                    : ""
                 )}
+                <h1 className="searchCompleteHeader">Search Completed</h1>
             </div>
         </>
     )

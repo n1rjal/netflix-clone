@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     overflow-x:hidden;
-    margin:1cm;
+    padding:1cm;
+    margin:1cm 0;
 }
 
 .season-container{
@@ -15,12 +16,12 @@
 }
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:850px){
     .detail-container{
         display: flex;
         justify-content: space-between;
         overflow-x:hidden;
-        margin:1cm;
+        margin:1cm 0;
         flex-direction: column;
     }
     
@@ -91,4 +92,8 @@
 }
 .recommendations{
     margin:1cm;
+}
+
+@media only screen and (max-width:600px){
+
 }

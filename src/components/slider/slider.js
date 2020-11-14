@@ -31,6 +31,7 @@ const Slider = (props)=>{
     if (loading){
         return (<Loader />)
     }
+    document.title="Netflix Clone - n1"
     return (
     <>
         <div className="slider">

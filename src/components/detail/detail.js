@@ -34,6 +34,9 @@ const Detail = (props) =>{
 
     if (loading) return (<Loader />)
 
+    document.title = info.original_title || info.original_name;
+
+
     return (
         <div className="detail">
             <div className="detail-container">

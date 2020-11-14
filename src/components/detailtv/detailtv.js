@@ -44,6 +44,8 @@ const DetailTv = (props)=>{
         return (<Loader />)
     }
 
+    document.title = info.original_title || info.original_name;
+    
     return (
         <>
             <div className="detail-container">

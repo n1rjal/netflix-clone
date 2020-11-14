@@ -11,7 +11,6 @@ const NavBar = ()=>{
     const [ searchtype, setSearchType] = useState("multi");
     const [showForm, setShowForm] =useState(false);
     const [show,setShow] = useState(false);
-    const [redirect,setRedirect] = useState("");
     let history = useHistory();
         
     const onSubmission = (e)=>{

@@ -5,3 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is fish 🐟"
+      - run: echo "${{github}}"

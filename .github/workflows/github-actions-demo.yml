@@ -1,0 +1,6 @@
+name: 1st github action
+on: [push]
+jobs:
+  Explore Github Actions:
+    steps:
+      - run: echo "This is fish 🐟"

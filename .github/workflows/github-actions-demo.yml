@@ -1,7 +1,7 @@
 name: 1st github action
 on: [push]
 jobs:
-  Explore Github Actions:
+  Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is fish 🐟"
